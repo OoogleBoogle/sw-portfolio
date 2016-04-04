@@ -1,0 +1,76 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+
+body {
+  background-color: transparent;
+}
+
+.viewport-container {
+  position: relative;
+  width: 99vw;
+  height: 99vh;
+  overflow: hidden;
+}
+
+.logo {
+  position:fixed;
+  z-index: 100;
+  color: white;
+  text-align: center;
+  font-size: 350%;
+}
+
+.background {
+  position:fixed;
+  width: 106%;
+  height: 106%;
+  background: transparent url('../images/space.jpg');
+  z-index: -99999;
+  transition: transform 1.5s;
+}
+
+.midground {
+  position: fixed;
+  width: 110%;
+  height: 110%;
+  background: transparent url('../images/midground.svg');
+  transition: transform 1.5s;
+  z-index: -9999;
+}
+
+
+@import "navigation";
+@import "animations";
+@import "panel-1";
+@import "panel-2";
+@import "panel-3";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

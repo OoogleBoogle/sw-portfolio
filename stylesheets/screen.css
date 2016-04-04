@@ -1,0 +1,355 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 9, ../sass/screen.scss */
+body {
+  background-color: transparent;
+}
+
+/* line 13, ../sass/screen.scss */
+.viewport-container {
+  position: relative;
+  width: 99vw;
+  height: 99vh;
+  overflow: hidden;
+}
+
+/* line 20, ../sass/screen.scss */
+.logo {
+  position: fixed;
+  z-index: 100;
+  color: white;
+  text-align: center;
+  font-size: 350%;
+}
+
+/* line 28, ../sass/screen.scss */
+.background {
+  position: fixed;
+  width: 106%;
+  height: 106%;
+  background: transparent url("../images/space.jpg");
+  z-index: -99999;
+  transition: transform 1.5s;
+}
+
+/* line 37, ../sass/screen.scss */
+.midground {
+  position: fixed;
+  width: 110%;
+  height: 110%;
+  background: transparent url("../images/midground.svg");
+  transition: transform 1.5s;
+  z-index: -9999;
+}
+
+/* line 1, ../sass/_navigation.scss */
+input[type="radio"] {
+  display: none;
+}
+
+/* line 5, ../sass/_navigation.scss */
+.nav-label {
+  position: absolute;
+  z-index: 100;
+  border: 1px solid white;
+  padding: .5em;
+  color: white;
+  top: 25%;
+  cursor: crosshair;
+}
+
+/* line 15, ../sass/_navigation.scss */
+.nav-label-2 {
+  top: 41%;
+}
+
+/* line 19, ../sass/_navigation.scss */
+.nav-label-3 {
+  top: 58%;
+}
+
+/* line 23, ../sass/_navigation.scss */
+input[type="radio"]:checked + label {
+  background-color: aqua;
+}
+
+/* line 28, ../sass/_navigation.scss */
+#screen-1:checked ~ .scrolling-container {
+  left: 12%;
+  bottom: 0;
+}
+/* line 33, ../sass/_navigation.scss */
+#screen-1:checked ~ .panel-2 {
+  left: 101vw;
+  top: 0;
+}
+/* line 38, ../sass/_navigation.scss */
+#screen-1:checked ~ .panel-3 {
+  left: 100vw;
+  top: 100%;
+}
+/* line 43, ../sass/_navigation.scss */
+#screen-1:checked ~ .midground {
+  transform: translate(0, 0);
+}
+/* line 47, ../sass/_navigation.scss */
+#screen-1:checked ~ .background {
+  transform: translate(0, 0);
+}
+
+/* line 54, ../sass/_navigation.scss */
+#screen-2:checked ~ .scrolling-container {
+  left: -100%;
+  bottom: 0;
+}
+/* line 59, ../sass/_navigation.scss */
+#screen-2:checked ~ .panel-2 {
+  left: 0;
+  top: 0;
+}
+/* line 64, ../sass/_navigation.scss */
+#screen-2:checked ~ .panel-3 {
+  top: 100%;
+  left: 0;
+}
+/* line 69, ../sass/_navigation.scss */
+#screen-2:checked ~ .midground {
+  transform: translate(-4.5%, 0);
+}
+/* line 73, ../sass/_navigation.scss */
+#screen-2:checked ~ .background {
+  transform: translate(-3%, 0);
+}
+
+/* line 79, ../sass/_navigation.scss */
+#screen-3:checked ~ .scrolling-container {
+  left: -100%;
+  bottom: 100%;
+}
+/* line 84, ../sass/_navigation.scss */
+#screen-3:checked ~ .panel-2 {
+  left: 0;
+  top: -100%;
+}
+/* line 89, ../sass/_navigation.scss */
+#screen-3:checked ~ .panel-3 {
+  left: 0;
+  top: 0;
+}
+/* line 93, ../sass/_navigation.scss */
+#screen-3:checked ~ .midground {
+  transform: translate(-4.5%, -6.5%);
+}
+/* line 98, ../sass/_navigation.scss */
+#screen-3:checked ~ .background {
+  transform: translate(-3%, -5%);
+}
+
+@keyframes expand {
+  0% {
+    width: 2em;
+    height: 2em;
+  }
+  100% {
+    width: 20em;
+    height: 10em;
+  }
+}
+@keyframes contract {
+  0% {
+    width: 20em;
+    height: 10em;
+  }
+  100% {
+    width: 2em;
+    height: 2em;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes scroll {
+  0% {
+    margin-top: 19.3em;
+  }
+  100% {
+    margin-top: -43em;
+  }
+}
+/* line 1, ../sass/_panel-1.scss */
+.scrolling-container {
+  position: fixed;
+  transform: perspective(20em) rotateX(25deg);
+  width: 75%;
+  height: 70vh;
+  overflow: hidden;
+  transition: 1.5s;
+}
+/* line 8, ../sass/_panel-1.scss */
+.scrolling-container:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 55%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.99) 90%);
+}
+
+/* line 17, ../sass/_panel-1.scss */
+.scrolling-text {
+  color: white;
+  text-align: justify;
+  font-size: 1.1em;
+  margin-top: 19.3em;
+  animation: scroll 30s linear 1s infinite;
+  /*   margin-top: -43em; */
+}
+@media screen and (min-width: 800px) {
+  /* line 17, ../sass/_panel-1.scss */
+  .scrolling-text {
+    font-size: 1.8em;
+  }
+}
+
+/* line 1, ../sass/_panel-2.scss */
+.panel-2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  transition: 1.5s;
+}
+
+/* line 9, ../sass/_panel-2.scss */
+.expanded-content {
+  position: relative;
+  float: left;
+  border: 1px solid black;
+  margin: 10em;
+  overflow: hidden;
+  width: 2em;
+  height: 2em;
+  -moz-animation: contract 1s;
+  -webkit-animation: contract 1s;
+  animation: contract 1s;
+}
+/* line 18, ../sass/_panel-2.scss */
+.expanded-content p {
+  opacity: 0;
+  -moz-animation: fadeOut 0.2s;
+  -webkit-animation: fadeOut 0.2s;
+  animation: fadeOut 0.2s;
+}
+/* line 22, ../sass/_panel-2.scss */
+.expanded-content:nth-child(odd) {
+  float: right;
+}
+
+/* line 27, ../sass/_panel-2.scss */
+.expanded-content:hover {
+  -moz-animation: expand 1s forwards;
+  -webkit-animation: expand 1s forwards;
+  animation: expand 1s forwards;
+}
+/* line 29, ../sass/_panel-2.scss */
+.expanded-content:hover p {
+  -moz-animation: fadeIn 1s 1s forwards;
+  -webkit-animation: fadeIn 1s 1s forwards;
+  animation: fadeIn 1s 1s forwards;
+}
+
+/* line 1, ../sass/_panel-3.scss */
+.panel-3 {
+  position: absolute;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  left: 100vw;
+  top: 100vw;
+  transition: 1.5s;
+  font-size: 3em;
+  padding-top: 2em;
+}
+
+/*# sourceMappingURL=screen.css.map */

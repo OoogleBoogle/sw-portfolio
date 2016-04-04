@@ -1,0 +1,24 @@
+@keyframes expand {
+  0% {width: 2em; height: 2em;}
+  100% {width: 20em; height: 10em;}
+}
+
+@keyframes contract {
+  0% {width: 20em; height: 10em;}
+  100% {width: 2em; height: 2em;}
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+@keyframes fadeOut {
+  0% {opacity: 1}
+  100% {opacity: 0}
+}
+
+@keyframes scroll {
+  0% {margin-top: 19.3em}
+  100% {margin-top: -43em}
+}
