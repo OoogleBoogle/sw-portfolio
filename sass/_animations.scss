@@ -24,8 +24,8 @@
 }
 
 @keyframes scrollMob {
-  0% {margin-top: 19.3em}
-  100% {margin-top: -103em}
+  0% {margin-top: 15em}
+  100% {margin-top: -56em}
 }
 
 @keyframes gradientFade {
@@ -33,6 +33,14 @@
   27% {opacity: 0}
   28% {opacity: 1}
   99% {opacity: 1; height: 55%;}
+  100% {opacity: 1; height: 25%;}
+}
+
+@keyframes gradientFadeMob {
+  0% {opacity: 0}
+  5% {opacity: 0}
+  20% {opacity: 1}
+  93% {opacity: 1; height: 55%;}
   100% {opacity: 1; height: 25%;}
 }
 
