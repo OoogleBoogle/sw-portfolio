@@ -109,119 +109,123 @@ body {
   z-index: -9999;
 }
 
-/* line 1, ../sass/_navigation.scss */
+/* line 1, ../sass/_navbar.scss */
 input[type="radio"] {
   display: none;
 }
 
-/* line 5, ../sass/_navigation.scss */
+/* line 5, ../sass/_navbar.scss */
 .nav-label {
+  font-family: 'Share Tech Mono', monospace;
   position: absolute;
+  background-color: rgba(6, 144, 243, 0.72);
   z-index: 100;
-  border: 1px solid white;
+  border-radius: 0 20px 20px 0;
   padding: .5em;
-  color: white;
-  top: 25%;
+  color: black;
+  top: 4em;
   cursor: crosshair;
+  transition: padding-left .5s, background-color .8s;
 }
 
-/* line 15, ../sass/_navigation.scss */
+/* line 18, ../sass/_navbar.scss */
 .nav-label-2 {
-  top: 41%;
+  top: 7.1em;
 }
 
-/* line 19, ../sass/_navigation.scss */
+/* line 22, ../sass/_navbar.scss */
 .nav-label-3 {
-  top: 58%;
+  top: 10.1em;
 }
 
-/* line 23, ../sass/_navigation.scss */
+/* line 26, ../sass/_navbar.scss */
 input[type="radio"]:checked + label {
-  background-color: aqua;
+  background-color: rgba(124, 177, 21, 0.81);
+  padding-left: 4em;
 }
 
-/* line 28, ../sass/_navigation.scss */
+/* line 2, ../sass/_screen-positions.scss */
 #screen-1:checked ~ .scrolling-container {
   left: 12%;
   bottom: 0;
 }
-/* line 33, ../sass/_navigation.scss */
+/* line 7, ../sass/_screen-positions.scss */
 #screen-1:checked ~ .panel-2 {
   left: 101vw;
   top: 0;
 }
-/* line 38, ../sass/_navigation.scss */
+/* line 12, ../sass/_screen-positions.scss */
 #screen-1:checked ~ .panel-3 {
   left: 100vw;
   top: 100%;
 }
-/* line 43, ../sass/_navigation.scss */
+/* line 17, ../sass/_screen-positions.scss */
 #screen-1:checked ~ .midground {
   transform: translate(0, 0);
 }
-/* line 47, ../sass/_navigation.scss */
+/* line 21, ../sass/_screen-positions.scss */
 #screen-1:checked ~ .background {
   transform: translate(0, 0);
 }
-/* line 51, ../sass/_navigation.scss */
+/* line 25, ../sass/_screen-positions.scss */
 #screen-1:checked ~ .panel-4 {
   top: 80vh;
   left: 20vw;
 }
 
-/* line 59, ../sass/_navigation.scss */
+/* line 33, ../sass/_screen-positions.scss */
 #screen-2:checked ~ .scrolling-container {
   left: -100%;
   bottom: 0;
 }
-/* line 64, ../sass/_navigation.scss */
+/* line 38, ../sass/_screen-positions.scss */
 #screen-2:checked ~ .panel-2 {
   left: 0;
   top: 0;
 }
-/* line 69, ../sass/_navigation.scss */
+/* line 43, ../sass/_screen-positions.scss */
 #screen-2:checked ~ .panel-3 {
   top: 100%;
   left: 0;
 }
-/* line 74, ../sass/_navigation.scss */
+/* line 48, ../sass/_screen-positions.scss */
 #screen-2:checked ~ .midground {
   transform: translate(-4.5%, 0);
 }
-/* line 78, ../sass/_navigation.scss */
+/* line 52, ../sass/_screen-positions.scss */
 #screen-2:checked ~ .background {
   transform: translate(-3%, 0);
 }
-/* line 82, ../sass/_navigation.scss */
+/* line 56, ../sass/_screen-positions.scss */
 #screen-2:checked ~ .panel-4 {
   top: 80vh;
   left: -50vw;
 }
 
-/* line 89, ../sass/_navigation.scss */
+/* line 63, ../sass/_screen-positions.scss */
 #screen-3:checked ~ .scrolling-container {
   left: -100%;
   bottom: 100%;
 }
-/* line 94, ../sass/_navigation.scss */
+/* line 68, ../sass/_screen-positions.scss */
 #screen-3:checked ~ .panel-2 {
   left: 0;
   top: -100%;
 }
-/* line 99, ../sass/_navigation.scss */
+/* line 73, ../sass/_screen-positions.scss */
 #screen-3:checked ~ .panel-3 {
   left: 0;
   top: 0;
 }
-/* line 103, ../sass/_navigation.scss */
+/* line 77, ../sass/_screen-positions.scss */
 #screen-3:checked ~ .midground {
   transform: translate(-4.5%, -6.5%);
 }
-/* line 108, ../sass/_navigation.scss */
+/* line 82, ../sass/_screen-positions.scss */
 #screen-3:checked ~ .background {
   transform: translate(-3%, -5%);
 }
-/* line 112, ../sass/_navigation.scss */
+/* line 86, ../sass/_screen-positions.scss */
 #screen-3:checked ~ .panel-4 {
   left: -40vw;
   top: -50vh;
@@ -320,6 +324,7 @@ input[type="radio"]:checked + label {
 
 /* line 19, ../sass/_panel-1.scss */
 .scrolling-text {
+  font-family: 'Droid Sans', sans-serif;
   color: white;
   text-align: justify;
   font-size: 1.1em;

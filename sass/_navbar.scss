@@ -1,0 +1,29 @@
+input[type="radio"] {
+  display: none;
+}
+
+.nav-label {
+  font-family: 'Share Tech Mono', monospace;
+  position:absolute;
+  background-color: rgba(6, 144, 243, 0.72);
+  z-index: 100;
+  border-radius: 0 20px 20px 0;
+  padding: .5em;
+  color: black;
+  top: 4em;
+  cursor: crosshair;
+  transition: padding-left .5s, background-color .8s;
+}
+
+.nav-label-2 {
+  top: 7.1em;
+}
+
+.nav-label-3 {
+  top: 10.1em;
+}
+
+input[type="radio"]:checked + label {
+  background-color: rgba(124, 177, 21, 0.81);
+  padding-left: 4em;
+}

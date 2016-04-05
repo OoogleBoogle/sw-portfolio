@@ -1,29 +1,3 @@
-input[type="radio"] {
-  display: none;
-}
-
-.nav-label {
-  position:absolute;
-  z-index: 100;
-  border: 1px solid white;
-  padding: .5em;
-  color: white;
-  top: 25%;
-  cursor: crosshair;
-}
-
-.nav-label-2 {
-  top: 41%;
-}
-
-.nav-label-3 {
-  top: 58%;
-}
-
-input[type="radio"]:checked + label {
-  background-color: aqua;
-}
-
 #screen-1:checked {
   ~ .scrolling-container {
     left: 12%;
