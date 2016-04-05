@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../.rvm/gems/ruby-2.2.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -76,7 +76,7 @@ body {
 .viewport-container {
   position: relative;
   width: 99vw;
-  height: 99vh;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -163,53 +163,68 @@ input[type="radio"]:checked + label {
 #screen-1:checked ~ .background {
   transform: translate(0, 0);
 }
+/* line 51, ../sass/_navigation.scss */
+#screen-1:checked ~ .panel-4 {
+  top: 80vh;
+  left: 20vw;
+}
 
-/* line 54, ../sass/_navigation.scss */
+/* line 59, ../sass/_navigation.scss */
 #screen-2:checked ~ .scrolling-container {
   left: -100%;
   bottom: 0;
 }
-/* line 59, ../sass/_navigation.scss */
+/* line 64, ../sass/_navigation.scss */
 #screen-2:checked ~ .panel-2 {
   left: 0;
   top: 0;
 }
-/* line 64, ../sass/_navigation.scss */
+/* line 69, ../sass/_navigation.scss */
 #screen-2:checked ~ .panel-3 {
   top: 100%;
   left: 0;
 }
-/* line 69, ../sass/_navigation.scss */
+/* line 74, ../sass/_navigation.scss */
 #screen-2:checked ~ .midground {
   transform: translate(-4.5%, 0);
 }
-/* line 73, ../sass/_navigation.scss */
+/* line 78, ../sass/_navigation.scss */
 #screen-2:checked ~ .background {
   transform: translate(-3%, 0);
 }
+/* line 82, ../sass/_navigation.scss */
+#screen-2:checked ~ .panel-4 {
+  top: 80vh;
+  left: -50vw;
+}
 
-/* line 79, ../sass/_navigation.scss */
+/* line 89, ../sass/_navigation.scss */
 #screen-3:checked ~ .scrolling-container {
   left: -100%;
   bottom: 100%;
 }
-/* line 84, ../sass/_navigation.scss */
+/* line 94, ../sass/_navigation.scss */
 #screen-3:checked ~ .panel-2 {
   left: 0;
   top: -100%;
 }
-/* line 89, ../sass/_navigation.scss */
+/* line 99, ../sass/_navigation.scss */
 #screen-3:checked ~ .panel-3 {
   left: 0;
   top: 0;
 }
-/* line 93, ../sass/_navigation.scss */
+/* line 103, ../sass/_navigation.scss */
 #screen-3:checked ~ .midground {
   transform: translate(-4.5%, -6.5%);
 }
-/* line 98, ../sass/_navigation.scss */
+/* line 108, ../sass/_navigation.scss */
 #screen-3:checked ~ .background {
   transform: translate(-3%, -5%);
+}
+/* line 112, ../sass/_navigation.scss */
+#screen-3:checked ~ .panel-4 {
+  left: -40vw;
+  top: -50vh;
 }
 
 @keyframes expand {
@@ -256,6 +271,33 @@ input[type="radio"]:checked + label {
     margin-top: -43em;
   }
 }
+@keyframes scrollMob {
+  0% {
+    margin-top: 19.3em;
+  }
+  100% {
+    margin-top: -103em;
+  }
+}
+@keyframes gradientFade {
+  0% {
+    opacity: 0;
+  }
+  27% {
+    opacity: 0;
+  }
+  28% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+    height: 55%;
+  }
+  100% {
+    opacity: 1;
+    height: 25%;
+  }
+}
 /* line 1, ../sass/_panel-1.scss */
 .scrolling-container {
   position: fixed;
@@ -268,13 +310,15 @@ input[type="radio"]:checked + label {
 /* line 8, ../sass/_panel-1.scss */
 .scrolling-container:before {
   position: absolute;
+  opacity: 0;
   content: "";
   width: 100%;
   height: 55%;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.99) 90%);
+  animation: gradientFade 30s linear 1s infinite;
 }
 
-/* line 17, ../sass/_panel-1.scss */
+/* line 19, ../sass/_panel-1.scss */
 .scrolling-text {
   color: white;
   text-align: justify;
@@ -284,7 +328,7 @@ input[type="radio"]:checked + label {
   /*   margin-top: -43em; */
 }
 @media screen and (min-width: 800px) {
-  /* line 17, ../sass/_panel-1.scss */
+  /* line 19, ../sass/_panel-1.scss */
   .scrolling-text {
     font-size: 1.8em;
   }
@@ -350,6 +394,14 @@ input[type="radio"]:checked + label {
   transition: 1.5s;
   font-size: 3em;
   padding-top: 2em;
+}
+
+/* line 1, ../sass/_panel-4.scss */
+.panel-4 {
+  position: absolute;
+  width: 100%;
+  z-index: -99;
+  transition: 1.5s;
 }
 
 /*# sourceMappingURL=screen.css.map */

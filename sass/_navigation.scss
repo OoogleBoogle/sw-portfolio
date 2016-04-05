@@ -47,6 +47,11 @@ input[type="radio"]:checked + label {
   ~ .background {
     transform: translate(0, 0);
   }
+
+  ~ .panel-4 {
+    top: 80vh;
+    left: 20vw;
+  }
 }
 
 
@@ -73,6 +78,11 @@ input[type="radio"]:checked + label {
   ~ .background {
     transform: translate(-3%, 0);
   }
+
+  ~ .panel-4 {
+    top: 80vh;
+    left: -50vw;
+  }
 }
 
 #screen-3:checked {
@@ -98,5 +108,9 @@ input[type="radio"]:checked + label {
   ~ .background {
     transform: translate(-3%, -5%);
   }
-
+  
+  ~ .panel-4 {
+    left: -40vw;
+    top: -50vh;
+  }
 }
