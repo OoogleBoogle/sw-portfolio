@@ -90,13 +90,40 @@ body {
 /* line 21, ../sass/screen.scss */
 .logo {
   position: fixed;
+  font-family: 'distant_galaxyregular';
   z-index: 100;
   color: white;
   text-align: center;
-  font-size: 350%;
+  left: 5%;
+  right: 5%;
+  top: .8em;
+  animation: logo 2s linear;
+}
+/* line 30, ../sass/screen.scss */
+.logo h1 {
+  color: black;
+  text-shadow: 1px 1px #d0f130, -1px 1px #d0f130, -1px -1px #d0f130, 1px -1px #d0f130;
+  font-size: 1.7em;
+}
+@media screen and (min-width: 768px) {
+  /* line 30, ../sass/screen.scss */
+  .logo h1 {
+    font-size: 3.5em;
+  }
+}
+/* line 38, ../sass/screen.scss */
+.logo h3 {
+  color: antiquewhite;
+  font-size: 1.5em;
+}
+@media screen and (min-width: 768px) {
+  /* line 38, ../sass/screen.scss */
+  .logo h3 {
+    font-size: 2.5em;
+  }
 }
 
-/* line 29, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 .background {
   position: fixed;
   width: 106%;
@@ -106,7 +133,7 @@ body {
   transition: transform 1.5s;
 }
 
-/* line 38, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 .midground {
   position: fixed;
   width: 110%;
@@ -131,7 +158,7 @@ input[type="radio"] {
   border-radius: 0 20px 20px 0;
   padding: .5em;
   color: black;
-  top: 4em;
+  top: 5em;
   cursor: crosshair;
   transition: padding-left .5s, background-color .8s;
   animation: navStart 3s ease-in-out 2s forwards;
@@ -139,12 +166,12 @@ input[type="radio"] {
 
 /* line 20, ../sass/_navbar.scss */
 .nav-label-2 {
-  top: 7.1em;
+  top: 8.1em;
 }
 
 /* line 24, ../sass/_navbar.scss */
 .nav-label-3 {
-  top: 10.1em;
+  top: 11.1em;
 }
 
 /* line 28, ../sass/_navbar.scss */
@@ -347,6 +374,20 @@ input[type="radio"]:checked + label {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes logo {
+  0% {
+    transform: scale(0);
+    top: 8em;
+  }
+  30% {
+    transform: scale(1.4);
+    top: 8em;
+  }
+  80% {
+    transform: scale(1.4);
+    top: 8em;
   }
 }
 /* line 1, ../sass/_panel-1.scss */

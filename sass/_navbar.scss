@@ -11,18 +11,18 @@ input[type="radio"] {
   border-radius: 0 20px 20px 0;
   padding: .5em;
   color: black;
-  top: 4em;
+  top: 5em;
   cursor: crosshair;
   transition: padding-left .5s, background-color .8s;
   animation: navStart 3s ease-in-out 2s forwards;
 }
 
 .nav-label-2 {
-  top: 7.1em;
+  top: 8.1em;
 }
 
 .nav-label-3 {
-  top: 10.1em;
+  top: 11.1em;
 }
 
 input[type="radio"]:checked + label {
