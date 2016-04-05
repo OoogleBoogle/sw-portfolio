@@ -18,32 +18,7 @@ body {
   overflow: hidden;
 }
 
-.logo {
-  position:fixed;
-  font-family: 'distant_galaxyregular';
-  z-index: 100;
-  color: white;
-  text-align: center;
-  left: 5%;
-  right: 5%;
-  top: .8em;
-  h1 {
-    color: black;
-    text-shadow: 1px 1px #d0f130, -1px 1px #d0f130, -1px -1px #d0f130, 1px -1px #d0f130;
-    font-size:1.7em;
-    @media screen and (min-width: 768px) {
-      font-size: 3.5em;
-    }
-  }
-  h3 {
-    color:antiquewhite;
-    font-size: 1.5em;
-    @media screen and (min-width: 768px) {
-      font-size: 2.5em;
-    }
-  }
-  animation: logo 2s linear;
-}
+
 
 .background {
   position:fixed;
@@ -62,7 +37,7 @@ body {
   transition: transform 1.5s;
   z-index: -9999;
 }
-
+@import "logo";
 @import "navbar";
 @import "screen-positions";
 @import "animations";

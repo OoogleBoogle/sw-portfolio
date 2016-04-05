@@ -14,7 +14,13 @@ input[type="radio"] {
   top: 5em;
   cursor: crosshair;
   transition: padding-left .5s, background-color .8s;
-  animation: navStart 3s ease-in-out 2s forwards;
+  animation: navStart 3s ease-in-out 3s forwards;
+  @media screen and (min-width: 768px) {
+    font-size: 1.05em;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 1.2em;
+  }
 }
 
 .nav-label-2 {
@@ -27,5 +33,8 @@ input[type="radio"] {
 
 input[type="radio"]:checked + label {
   background-color: rgba(124, 177, 21, 0.81);
-  padding-left: 4em;
+  padding-left: 2em;
+  @media screen and (min-width: 768px) {
+    padding-left: 3em;
+  }
 }
