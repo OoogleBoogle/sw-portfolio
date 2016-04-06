@@ -1,16 +1,17 @@
 .scrolling-container {
-  position: fixed;
-  transform: perspective(20em) rotateX(25deg);
+  position: absolute;
+  @include transform(perspective(20em) rotateX(25deg));
   width: 80%;
   height: 70vh;
   overflow: hidden;
   @include transition(1.5s);
   &:before {
     position: absolute;
-    opacity: 0;
+    opacity: 1;
     content: "";
     width: 100%;
     height: 55%;
+    background-image: -webkit-linear-gradient(bottom, transparent 0%, rgba(0,0,0,0.99) 90%);
     background: linear-gradient(0deg, transparent, rgba(0,0,0,0.99) 90%);
     @include animation(gradientFade 40s linear 2s infinite);
   }
@@ -38,7 +39,7 @@
     font-size: 2em;
     margin-top: 15em;
     line-height: 1.3em;
-    @include animation(scroll 40s linear 2s infinite);
+    @include animation(scroll 40s linear 3s infinite);
   }
 
 }
