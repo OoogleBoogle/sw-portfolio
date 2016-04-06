@@ -12,11 +12,11 @@
   h1 {
     color: black;
     @include text-shadow(1px 1px #d0f130, -1px 1px #d0f130, -1px -1px #d0f130, 1px -1px #d0f130);
-    font-size:1.9em;
+    font-size:1.6em;
   }
   h3 {
     color: antiquewhite;
-    font-size: 1.7em;
+    font-size: 1.4em;
   }
   @media screen and (min-width: 768px) {
     h1 {
@@ -33,6 +33,14 @@
     }
     h3 {
       font-size: 3.1em;
+    }
+  }
+  @media screen and (min-width: 1441px) {
+    h1 {
+      font-size: 7em
+    }
+    h3 {
+      font-size: 4.5em;
     }
   }
 }

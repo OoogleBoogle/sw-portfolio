@@ -21,6 +21,10 @@ input[type="radio"] {
   @media screen and (min-width: 1024px) {
     font-size: 1.2em;
   }
+  @media screen and (min-width: 1441px) {
+    font-size: 2em;
+    @include border-radius(0 40px 40px 0);
+  }
 }
 
 .nav-label-2 {

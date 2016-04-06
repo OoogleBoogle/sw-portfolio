@@ -132,12 +132,12 @@ body {
 .logo h1 {
   color: black;
   text-shadow: 1px 1px #d0f130, -1px 1px #d0f130, -1px -1px #d0f130, 1px -1px #d0f130;
-  font-size: 1.9em;
+  font-size: 1.6em;
 }
 /* line 17, ../sass/_logo.scss */
 .logo h3 {
   color: antiquewhite;
-  font-size: 1.7em;
+  font-size: 1.4em;
 }
 @media screen and (min-width: 768px) {
   /* line 22, ../sass/_logo.scss */
@@ -161,6 +161,16 @@ body {
   /* line 34, ../sass/_logo.scss */
   .logo h3 {
     font-size: 3.1em;
+  }
+}
+@media screen and (min-width: 1441px) {
+  /* line 39, ../sass/_logo.scss */
+  .logo h1 {
+    font-size: 7em;
+  }
+  /* line 42, ../sass/_logo.scss */
+  .logo h3 {
+    font-size: 4.5em;
   }
 }
 
@@ -203,24 +213,33 @@ input[type="radio"] {
     font-size: 1.2em;
   }
 }
+@media screen and (min-width: 1441px) {
+  /* line 5, ../sass/_navbar.scss */
+  .nav-label {
+    font-size: 2em;
+    -moz-border-radius: 0 40px 40px 0;
+    -webkit-border-radius: 0;
+    border-radius: 0 40px 40px 0;
+  }
+}
 
-/* line 26, ../sass/_navbar.scss */
+/* line 30, ../sass/_navbar.scss */
 .nav-label-2 {
   top: 8.1em;
 }
 
-/* line 30, ../sass/_navbar.scss */
+/* line 34, ../sass/_navbar.scss */
 .nav-label-3 {
   top: 11.1em;
 }
 
-/* line 34, ../sass/_navbar.scss */
+/* line 38, ../sass/_navbar.scss */
 input[type="radio"]:checked + label {
   background-color: rgba(124, 177, 21, 0.81);
   padding-left: 2em;
 }
 @media screen and (min-width: 768px) {
-  /* line 34, ../sass/_navbar.scss */
+  /* line 38, ../sass/_navbar.scss */
   input[type="radio"]:checked + label {
     padding-left: 3em;
   }
@@ -433,7 +452,7 @@ input[type="radio"]:checked + label {
 }
 @keyframes scroll {
   0% {
-    margin-top: 15em;
+    margin-top: 19em;
   }
   100% {
     margin-top: -42em;
@@ -441,29 +460,27 @@ input[type="radio"]:checked + label {
 }
 @keyframes scrollMob {
   0% {
-    margin-top: 15em;
+    margin-top: 19em;
   }
   100% {
-    margin-top: -56em;
+    margin-top: -70em;
   }
 }
 @keyframes gradientFade {
   0% {
     opacity: 0;
   }
-  6% {
+  10% {
     opacity: 0;
   }
   20% {
     opacity: 1;
   }
-  90% {
+  80% {
     opacity: 1;
-    height: 55%;
   }
   100% {
     opacity: 0.3;
-    height: 15%;
   }
 }
 @keyframes navStart {
@@ -531,7 +548,7 @@ input[type="radio"]:checked + label {
     opacity: 1;
   }
 }
-/* line 1, ../sass/_panel-1.scss */
+/* line 1, ../sass/_introduction.scss */
 .scrolling-container {
   position: absolute;
   -moz-transform: perspective(20em) rotateX(25deg);
@@ -546,50 +563,59 @@ input[type="radio"]:checked + label {
   -webkit-transition: 1.5s;
   transition: 1.5s;
 }
-/* line 8, ../sass/_panel-1.scss */
+/* line 8, ../sass/_introduction.scss */
 .scrolling-container:before {
   position: absolute;
-  opacity: 1;
+  opacity: 0;
   content: "";
   width: 100%;
-  height: 55%;
-  background-image: -webkit-linear-gradient(bottom, transparent 0%, rgba(0, 0, 0, 0.99) 90%);
+  height: 50%;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.99) 90%);
-  -moz-animation: gradientFade 40s linear 2s infinite;
-  -webkit-animation: gradientFade 40s linear 2s infinite;
-  animation: gradientFade 40s linear 2s infinite;
+  -moz-animation: gradientFade 60s linear 3s infinite;
+  -webkit-animation: gradientFade 60s linear 3s infinite;
+  animation: gradientFade 60s linear 3s infinite;
 }
 @media screen and (min-width: 769px) {
-  /* line 1, ../sass/_panel-1.scss */
+  /* line 1, ../sass/_introduction.scss */
   .scrolling-container {
     width: 75%;
     left: 45%;
   }
+  /* line 21, ../sass/_introduction.scss */
+  .scrolling-container:before {
+    -moz-animation: gradientFade 40s linear 3s infinite;
+    -webkit-animation: gradientFade 40s linear 3s infinite;
+    animation: gradientFade 40s linear 3s infinite;
+  }
+}
+@media screen and (min-width: 1441px) {
+  /* line 1, ../sass/_introduction.scss */
+  .scrolling-container {
+    -moz-transform: perspective(30em) rotateX(20deg);
+    -ms-transform: perspective(30em) rotateX(20deg);
+    -webkit-transform: perspective(30em) rotateX(20deg);
+    transform: perspective(30em) rotateX(20deg);
+  }
 }
 
-/* line 24, ../sass/_panel-1.scss */
+/* line 30, ../sass/_introduction.scss */
 .scrolling-text {
   font-family: 'Droid Sans', sans-serif;
   line-height: 1.2em;
   color: yellow;
   text-align: justify;
   font-size: 1.5em;
-  margin-top: -56em;
+  margin-top: 19em;
+  -moz-animation: scrollMob 60s linear 3s infinite;
+  -webkit-animation: scrollMob 60s linear 3s infinite;
+  animation: scrollMob 60s linear 3s infinite;
 }
-/* line 31, ../sass/_panel-1.scss */
+/* line 38, ../sass/_introduction.scss */
 .scrolling-text p {
   padding: .5em;
 }
-@media screen and (max-width: 768px) {
-  /* line 24, ../sass/_panel-1.scss */
-  .scrolling-text {
-    -moz-animation: scrollMob 40s linear 3s infinite;
-    -webkit-animation: scrollMob 40s linear 3s infinite;
-    animation: scrollMob 40s linear 3s infinite;
-  }
-}
 @media screen and (min-width: 769px) {
-  /* line 24, ../sass/_panel-1.scss */
+  /* line 30, ../sass/_introduction.scss */
   .scrolling-text {
     font-size: 2em;
     margin-top: 15em;
@@ -599,8 +625,14 @@ input[type="radio"]:checked + label {
     animation: scroll 40s linear 3s infinite;
   }
 }
+@media screen and (min-width: 1441px) {
+  /* line 30, ../sass/_introduction.scss */
+  .scrolling-text {
+    font-size: 3.5em;
+  }
+}
 
-/* line 1, ../sass/_panel-2.scss */
+/* line 1, ../sass/_projects.scss */
 .panel-2 {
   position: absolute;
   width: 100%;
@@ -612,7 +644,7 @@ input[type="radio"]:checked + label {
   transition: 1.5s;
 }
 
-/* line 1, ../sass/_panel-3.scss */
+/* line 1, ../sass/_contact.scss */
 .panel-3 {
   position: absolute;
   color: white;
@@ -630,7 +662,7 @@ input[type="radio"]:checked + label {
   transition: 1.5s;
 }
 
-/* line 1, ../sass/_panel-4.scss */
+/* line 1, ../sass/_planet.scss */
 .panel-4 {
   position: absolute;
   width: 100%;
@@ -639,6 +671,12 @@ input[type="radio"]:checked + label {
   -o-transition: 1.5s;
   -webkit-transition: 1.5s;
   transition: 1.5s;
+}
+@media screen and (min-width: 1441px) {
+  /* line 7, ../sass/_planet.scss */
+  .panel-4 img {
+    width: 150%;
+  }
 }
 
 /*# sourceMappingURL=screen.css.map */

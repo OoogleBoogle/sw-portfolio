@@ -19,21 +19,21 @@
 }
 
 @keyframes scroll {
-  0% {margin-top: 15em}
-  100% {margin-top: -42em}
+  0% {margin-top: 19em;}
+  100% {margin-top: -42em;}
 }
 
 @keyframes scrollMob {
-  0% {margin-top: 15em}
-  100% {margin-top: -56em}
+  0% {margin-top: 19em;}
+  100% {margin-top: -70em;}
 }
 
 @keyframes gradientFade {
   0% {opacity: 0}
-  6% {opacity: 0}
+  10% {opacity: 0}
   20% {opacity: 1}
-  90% {opacity: 1; height: 55%;}
-  100% {opacity: 0.3; height: 15%;}
+  80% {opacity: 1;}
+  100% {opacity: 0.3;}
 }
 
 
