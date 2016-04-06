@@ -2,6 +2,5 @@
 	position: absolute;
 	width: 100%;
 	z-index: -99;
-	transition: 1.5s;
-	
+	@include transition(1.5s);
 }

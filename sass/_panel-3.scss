@@ -7,7 +7,7 @@
   background-color: transparent;
   left: 100vw;
   top: 100vw;
-  transition: 1.5s;
   font-size: 3em;
   padding-top: 2em;
+  @include transition(1.5s);
 }

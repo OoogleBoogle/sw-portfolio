@@ -94,6 +94,9 @@ body {
   height: 106%;
   background: transparent url("../images/space.jpg");
   z-index: -99999;
+  -moz-transition: -moz-transform 1.5s;
+  -o-transition: -o-transform 1.5s;
+  -webkit-transition: -webkit-transform 1.5s;
   transition: transform 1.5s;
 }
 
@@ -103,13 +106,16 @@ body {
   width: 110%;
   height: 110%;
   background: transparent url("../images/midground.svg");
+  -moz-transition: -moz-transform 1.5s;
+  -o-transition: -o-transform 1.5s;
+  -webkit-transition: -webkit-transform 1.5s;
   transition: transform 1.5s;
   z-index: -9999;
 }
 
 /* line 1, ../sass/_logo.scss */
 .logo {
-  position: fixed;
+  position: absolute;
   opacity: 0;
   font-family: 'distant_galaxyregular';
   z-index: 100;
@@ -118,6 +124,8 @@ body {
   left: 5%;
   right: 5%;
   top: .8em;
+  -moz-animation: logo 2s linear 1s forwards;
+  -webkit-animation: logo 2s linear 1s forwards;
   animation: logo 2s linear 1s forwards;
 }
 /* line 12, ../sass/_logo.scss */
@@ -168,12 +176,19 @@ input[type="radio"] {
   position: absolute;
   background-color: rgba(6, 144, 243, 0.72);
   z-index: 100;
+  -moz-border-radius: 0 20px 20px 0;
+  -webkit-border-radius: 0;
   border-radius: 0 20px 20px 0;
   padding: .5em;
   color: black;
   top: 5em;
   cursor: crosshair;
-  transition: padding-left .5s, background-color .8s;
+  -moz-transition: padding-left 0.5s, background-color 0.8s;
+  -o-transition: padding-left 0.5s, background-color 0.8s;
+  -webkit-transition: padding-left 0.5s, background-color 0.8s;
+  transition: padding-left 0.5s, background-color 0.8s;
+  -moz-animation: navStart 3s ease-in-out 3s forwards;
+  -webkit-animation: navStart 3s ease-in-out 3s forwards;
   animation: navStart 3s ease-in-out 3s forwards;
 }
 @media screen and (min-width: 768px) {
@@ -216,140 +231,164 @@ input[type="radio"]:checked + label {
   left: 10%;
   bottom: 0;
 }
-/* line 7, ../sass/_screen-positions.scss */
+@media screen and (min-width: 769px) {
+  /* line 2, ../sass/_screen-positions.scss */
+  #screen-1:checked ~ .scrolling-container {
+    left: 12.5%;
+  }
+}
+/* line 10, ../sass/_screen-positions.scss */
 #screen-1:checked ~ .panel-2 {
   left: 101vw;
   top: 0;
 }
-/* line 12, ../sass/_screen-positions.scss */
+/* line 15, ../sass/_screen-positions.scss */
 #screen-1:checked ~ .panel-3 {
   left: 100vw;
   top: 100%;
 }
-/* line 17, ../sass/_screen-positions.scss */
+/* line 20, ../sass/_screen-positions.scss */
 #screen-1:checked ~ .midground {
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
 }
-/* line 21, ../sass/_screen-positions.scss */
+/* line 24, ../sass/_screen-positions.scss */
 #screen-1:checked ~ .background {
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
 }
-/* line 25, ../sass/_screen-positions.scss */
+/* line 28, ../sass/_screen-positions.scss */
 #screen-1:checked ~ .panel-4 {
   top: 65vh;
   left: -60vw;
 }
 @media screen and (min-width: 572px) {
-  /* line 25, ../sass/_screen-positions.scss */
+  /* line 28, ../sass/_screen-positions.scss */
   #screen-1:checked ~ .panel-4 {
     left: -20vw;
   }
 }
 @media screen and (min-width: 866px) {
-  /* line 25, ../sass/_screen-positions.scss */
+  /* line 28, ../sass/_screen-positions.scss */
   #screen-1:checked ~ .panel-4 {
     left: 20vw;
   }
 }
 @media screen and (min-width: 1140px) {
-  /* line 25, ../sass/_screen-positions.scss */
+  /* line 28, ../sass/_screen-positions.scss */
   #screen-1:checked ~ .panel-4 {
     left: 30vw;
   }
 }
 
-/* line 42, ../sass/_screen-positions.scss */
+/* line 45, ../sass/_screen-positions.scss */
 #screen-2:checked ~ .scrolling-container {
   left: -100%;
   bottom: 0;
 }
-/* line 47, ../sass/_screen-positions.scss */
+/* line 50, ../sass/_screen-positions.scss */
 #screen-2:checked ~ .panel-2 {
   left: 0;
   top: 0;
 }
-/* line 52, ../sass/_screen-positions.scss */
+/* line 55, ../sass/_screen-positions.scss */
 #screen-2:checked ~ .panel-3 {
   top: 100%;
   left: 0;
 }
-/* line 57, ../sass/_screen-positions.scss */
+/* line 60, ../sass/_screen-positions.scss */
 #screen-2:checked ~ .midground {
+  -moz-transform: translate(-4.5%, 0);
+  -ms-transform: translate(-4.5%, 0);
+  -webkit-transform: translate(-4.5%, 0);
   transform: translate(-4.5%, 0);
 }
-/* line 61, ../sass/_screen-positions.scss */
+/* line 64, ../sass/_screen-positions.scss */
 #screen-2:checked ~ .background {
+  -moz-transform: translate(-3%, 0);
+  -ms-transform: translate(-3%, 0);
+  -webkit-transform: translate(-3%, 0);
   transform: translate(-3%, 0);
 }
-/* line 65, ../sass/_screen-positions.scss */
+/* line 68, ../sass/_screen-positions.scss */
 #screen-2:checked ~ .panel-4 {
   top: 80vh;
   left: -160vw;
 }
 @media screen and (min-width: 572px) {
-  /* line 65, ../sass/_screen-positions.scss */
+  /* line 68, ../sass/_screen-positions.scss */
   #screen-2:checked ~ .panel-4 {
     top: 70vh;
     left: -120vw;
   }
 }
 @media screen and (min-width: 866px) {
-  /* line 65, ../sass/_screen-positions.scss */
+  /* line 68, ../sass/_screen-positions.scss */
   #screen-2:checked ~ .panel-4 {
     left: -90vw;
   }
 }
 @media screen and (min-width: 1140px) {
-  /* line 65, ../sass/_screen-positions.scss */
+  /* line 68, ../sass/_screen-positions.scss */
   #screen-2:checked ~ .panel-4 {
     left: -50vw;
   }
 }
 
-/* line 82, ../sass/_screen-positions.scss */
+/* line 85, ../sass/_screen-positions.scss */
 #screen-3:checked ~ .scrolling-container {
   left: -100%;
   bottom: 100%;
 }
-/* line 87, ../sass/_screen-positions.scss */
+/* line 90, ../sass/_screen-positions.scss */
 #screen-3:checked ~ .panel-2 {
   left: 0;
   top: -100%;
 }
-/* line 92, ../sass/_screen-positions.scss */
+/* line 95, ../sass/_screen-positions.scss */
 #screen-3:checked ~ .panel-3 {
   left: 0;
   top: 0;
 }
-/* line 96, ../sass/_screen-positions.scss */
+/* line 99, ../sass/_screen-positions.scss */
 #screen-3:checked ~ .midground {
+  -moz-transform: translate(-4.5%, -6.5%);
+  -ms-transform: translate(-4.5%, -6.5%);
+  -webkit-transform: translate(-4.5%, -6.5%);
   transform: translate(-4.5%, -6.5%);
 }
-/* line 101, ../sass/_screen-positions.scss */
+/* line 104, ../sass/_screen-positions.scss */
 #screen-3:checked ~ .background {
+  -moz-transform: translate(-3%, -5%);
+  -ms-transform: translate(-3%, -5%);
+  -webkit-transform: translate(-3%, -5%);
   transform: translate(-3%, -5%);
 }
-/* line 105, ../sass/_screen-positions.scss */
+/* line 108, ../sass/_screen-positions.scss */
 #screen-3:checked ~ .panel-4 {
   left: -160vw;
   top: 10vh;
 }
 @media screen and (min-width: 572px) {
-  /* line 105, ../sass/_screen-positions.scss */
+  /* line 108, ../sass/_screen-positions.scss */
   #screen-3:checked ~ .panel-4 {
     left: -120vw;
     top: 5vh;
   }
 }
 @media screen and (min-width: 866px) {
-  /* line 105, ../sass/_screen-positions.scss */
+  /* line 108, ../sass/_screen-positions.scss */
   #screen-3:checked ~ .panel-4 {
     left: -90vw;
     top: 2vh;
   }
 }
 @media screen and (min-width: 1140px) {
-  /* line 105, ../sass/_screen-positions.scss */
+  /* line 108, ../sass/_screen-positions.scss */
   #screen-3:checked ~ .panel-4 {
     left: -50vw;
     top: 0;
@@ -394,10 +433,10 @@ input[type="radio"]:checked + label {
 }
 @keyframes scroll {
   0% {
-    margin-top: 19.3em;
+    margin-top: 15em;
   }
   100% {
-    margin-top: -43em;
+    margin-top: -42em;
   }
 }
 @keyframes scrollMob {
@@ -412,38 +451,19 @@ input[type="radio"]:checked + label {
   0% {
     opacity: 0;
   }
-  27% {
-    opacity: 0;
-  }
-  28% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 1;
-    height: 55%;
-  }
-  100% {
-    opacity: 1;
-    height: 25%;
-  }
-}
-@keyframes gradientFadeMob {
-  0% {
-    opacity: 0;
-  }
-  5% {
+  6% {
     opacity: 0;
   }
   20% {
     opacity: 1;
   }
-  93% {
+  90% {
     opacity: 1;
     height: 55%;
   }
   100% {
-    opacity: 1;
-    height: 25%;
+    opacity: 0.3;
+    height: 15%;
   }
 }
 @keyframes navStart {
@@ -487,14 +507,23 @@ input[type="radio"]:checked + label {
 @keyframes logo {
   0% {
     opacity: 1;
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
     transform: scale(0);
     top: 8em;
   }
   30% {
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -webkit-transform: scale(1.4);
     transform: scale(1.4);
     top: 8em;
   }
   80% {
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -webkit-transform: scale(1.4);
     transform: scale(1.4);
     top: 8em;
   }
@@ -509,6 +538,9 @@ input[type="radio"]:checked + label {
   width: 80%;
   height: 70vh;
   overflow: hidden;
+  -moz-transition: 1.5s;
+  -o-transition: 1.5s;
+  -webkit-transition: 1.5s;
   transition: 1.5s;
 }
 /* line 8, ../sass/_panel-1.scss */
@@ -519,36 +551,48 @@ input[type="radio"]:checked + label {
   width: 100%;
   height: 55%;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.99) 90%);
+  -moz-animation: gradientFade 40s linear 2s infinite;
+  -webkit-animation: gradientFade 40s linear 2s infinite;
+  animation: gradientFade 40s linear 2s infinite;
 }
-@media screen and (max-width: 768px) {
-  /* line 17, ../sass/_panel-1.scss */
-  .scrolling-container:before {
-    animation: gradientFadeMob 60s linear 1s infinite;
+@media screen and (min-width: 769px) {
+  /* line 1, ../sass/_panel-1.scss */
+  .scrolling-container {
+    width: 75%;
+    left: 45%;
   }
 }
 
 /* line 23, ../sass/_panel-1.scss */
 .scrolling-text {
   font-family: 'Droid Sans', sans-serif;
+  line-height: 1.2em;
   color: yellow;
   text-align: justify;
   font-size: 1.5em;
   margin-top: -56em;
 }
-/* line 29, ../sass/_panel-1.scss */
+/* line 30, ../sass/_panel-1.scss */
 .scrolling-text p {
   padding: .5em;
 }
 @media screen and (max-width: 768px) {
   /* line 23, ../sass/_panel-1.scss */
   .scrolling-text {
-    animation: scrollMob 60s linear 3s infinite;
+    -moz-animation: scrollMob 40s linear 3s infinite;
+    -webkit-animation: scrollMob 40s linear 3s infinite;
+    animation: scrollMob 40s linear 3s infinite;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 769px) {
   /* line 23, ../sass/_panel-1.scss */
   .scrolling-text {
-    font-size: 1.8em;
+    font-size: 2em;
+    margin-top: 15em;
+    line-height: 1.3em;
+    -moz-animation: scroll 40s linear 2s infinite;
+    -webkit-animation: scroll 40s linear 2s infinite;
+    animation: scroll 40s linear 2s infinite;
   }
 }
 
@@ -558,45 +602,10 @@ input[type="radio"]:checked + label {
   width: 100%;
   height: 100%;
   background-color: transparent;
+  -moz-transition: 1.5s;
+  -o-transition: 1.5s;
+  -webkit-transition: 1.5s;
   transition: 1.5s;
-}
-
-/* line 9, ../sass/_panel-2.scss */
-.expanded-content {
-  position: relative;
-  float: left;
-  border: 1px solid black;
-  margin: 10em;
-  overflow: hidden;
-  width: 2em;
-  height: 2em;
-  -moz-animation: contract 1s;
-  -webkit-animation: contract 1s;
-  animation: contract 1s;
-}
-/* line 18, ../sass/_panel-2.scss */
-.expanded-content p {
-  opacity: 0;
-  -moz-animation: fadeOut 0.2s;
-  -webkit-animation: fadeOut 0.2s;
-  animation: fadeOut 0.2s;
-}
-/* line 22, ../sass/_panel-2.scss */
-.expanded-content:nth-child(odd) {
-  float: right;
-}
-
-/* line 27, ../sass/_panel-2.scss */
-.expanded-content:hover {
-  -moz-animation: expand 1s forwards;
-  -webkit-animation: expand 1s forwards;
-  animation: expand 1s forwards;
-}
-/* line 29, ../sass/_panel-2.scss */
-.expanded-content:hover p {
-  -moz-animation: fadeIn 1s 1s forwards;
-  -webkit-animation: fadeIn 1s 1s forwards;
-  animation: fadeIn 1s 1s forwards;
 }
 
 /* line 1, ../sass/_panel-3.scss */
@@ -609,9 +618,12 @@ input[type="radio"]:checked + label {
   background-color: transparent;
   left: 100vw;
   top: 100vw;
-  transition: 1.5s;
   font-size: 3em;
   padding-top: 2em;
+  -moz-transition: 1.5s;
+  -o-transition: 1.5s;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 /* line 1, ../sass/_panel-4.scss */
@@ -619,6 +631,9 @@ input[type="radio"]:checked + label {
   position: absolute;
   width: 100%;
   z-index: -99;
+  -moz-transition: 1.5s;
+  -o-transition: 1.5s;
+  -webkit-transition: 1.5s;
   transition: 1.5s;
 }
 

@@ -26,7 +26,7 @@ body {
   height: 106%;
   background: transparent url('../images/space.jpg');
   z-index: -99999;
-  transition: transform 1.5s;
+  @include transition(transform 1.5s);
 }
 
 .midground {
@@ -34,9 +34,11 @@ body {
   width: 110%;
   height: 110%;
   background: transparent url('../images/midground.svg');
-  transition: transform 1.5s;
+  @include transition(transform 1.5s);
   z-index: -9999;
 }
+
+
 @import "logo";
 @import "navbar";
 @import "screen-positions";
