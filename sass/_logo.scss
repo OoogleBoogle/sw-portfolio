@@ -8,10 +8,10 @@
   left: 5%;
   right: 5%;
   top: .8em;
-  @include animation(logo 2s linear 1s forwards);
+  animation: logo 2s linear 1s forwards;
   h1 {
     color: black;
-    @include text-shadow(1px 1px #d0f130, -1px 1px #d0f130, -1px -1px #d0f130, 1px -1px #d0f130);
+    text-shadow: 1px 1px #d0f130, -1px 1px #d0f130, -1px -1px #d0f130, 1px -1px #d0f130;
     font-size:1.6em;
   }
   h3 {

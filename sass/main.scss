@@ -3,8 +3,6 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
-@import "compass/css3";
 @import "fonts";
 
 body {
@@ -26,7 +24,7 @@ body {
   height: 106%;
   background: transparent url('../images/space.jpg');
   z-index: -99999;
-  @include transition(transform 1.5s);
+  transition: transform 1.5s;
 }
 
 .midground {
@@ -34,7 +32,7 @@ body {
   width: 110%;
   height: 110%;
   background: transparent url('../images/midground.svg');
-  @include transition(transform 1.5s);
+  transition: transform 1.5s;
   z-index: -9999;
 }
 

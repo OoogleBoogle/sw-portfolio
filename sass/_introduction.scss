@@ -1,10 +1,10 @@
 .scrolling-container {
   position: absolute;
-  @include transform(perspective(20em) rotateX(25deg));
+  transform: perspective(20em) rotateX(25deg);
   width: 80%;
   height: 70vh;
   overflow: hidden;
-  @include transition(1.5s);
+  transition: 1.5s;
   &:before {
     position: absolute;
     opacity: 0;
@@ -13,17 +13,17 @@
     height: 50%;
     // background-image: -webkit-linear-gradient(bottom, transparent 0%, rgba(0,0,0,0.99) 90%);
     background: linear-gradient(0deg, transparent, rgba(0,0,0,0.99) 90%);
-    @include animation(gradientFade 60s linear 3s infinite);
+    animation: gradientFade 60s linear 3s infinite;
   }
   @media screen and (min-width: 769px) {
     width: 75%;    
     left: 45%;
     &:before {
-      @include animation(gradientFade 40s linear 3s infinite);
+      animation: gradientFade 40s linear 3s infinite;
     }
   }
   @media screen and (min-width: 1441px) {
-    @include transform(perspective(30em) rotateX(20deg));
+    transform: perspective(30em) rotateX(20deg);
   }
 }
 
@@ -34,7 +34,7 @@
   text-align: justify;
   font-size: 1.5em;
   margin-top: 19em;
-  @include animation(scrollMob 60s linear 3s infinite);
+  animation: scrollMob 60s linear 3s infinite;
   p {
     padding: .5em;
   }
@@ -42,7 +42,7 @@
     font-size: 2em;
     margin-top: 15em;
     line-height: 1.3em;
-    @include animation(scroll 40s linear 3s infinite);
+    animation: scroll 40s linear 3s infinite;
   }
   @media screen and (min-width: 1441px) {
     font-size: 3.5em;

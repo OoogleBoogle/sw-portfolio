@@ -8,13 +8,13 @@ input[type="radio"] {
   position: absolute;
   background-color: rgba(6, 144, 243, 0.72);
   z-index: 100;
-  @include border-radius(0 20px 20px 0);
+  border-radius: 0 20px 20px 0;
   padding: .5em;
   color: black;
   top: 5em;
   cursor: crosshair;
-  @include transition(padding-left .5s, background-color .8s);
-  @include animation(navStart 3s ease-in-out 3s forwards);
+  transition: padding-left .5s, background-color .8s;
+  animation: navStart 3s ease-in-out 3s forwards;
   @media screen and (min-width: 768px) {
     font-size: 1.05em;
   }

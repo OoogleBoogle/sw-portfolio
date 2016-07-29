@@ -1,8 +1,8 @@
-.panel-4 {
+.planet {
 	position: absolute;
 	width: 100%;
 	z-index: -99;
-	@include transition(1.5s);
+	transition: 1.5s;
 	@media screen and (min-width: 1441px) {
 		img {
 			width: 150%;
