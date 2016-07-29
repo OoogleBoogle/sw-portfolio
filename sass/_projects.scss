@@ -115,8 +115,14 @@
 
 .hide-button {
   color: red;
+  cursor: pointer;
   font: 1em 'Share Tech Mono', monospace;
   padding: 1em;
+
+  &:hover {
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+  }
 }
 
 .project:before, 
