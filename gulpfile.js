@@ -85,4 +85,5 @@ gulp.task('dev', ['html', 'sass', 'images', 'fonts', 'watch','serve']);
 gulp.task('build', ['sass:prod', 'html:prod', 'fonts', 'images']);
 
 // git build push command
+// git subtree push --prefix build origin gh-pages
 // git push origin `git subtree split --prefix build gh-pages`:gh-pages --force
