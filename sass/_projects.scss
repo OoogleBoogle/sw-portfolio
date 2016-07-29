@@ -1,0 +1,171 @@
+.projects {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  transition: 1.5s;
+}
+
+.project-icon {
+  position: absolute;
+  max-width: 120px;
+  width: 20%;
+
+  img {
+    transform: scale(1);
+    transition: transform 1s;
+    width: 100%;
+  }
+}
+
+
+#angular:checked + .project-icon img,
+#react:checked + .project-icon img,
+#js:checked + .project-icon img {
+  transform: scale(1.1);
+}
+
+.angular {
+  animation: bob1 15s cubic-bezier(0.61, 0.3, 0.24, 0.51) infinite;
+  top: 35%;
+  left: 45%;
+}
+
+.react {
+  animation: bob2 15s cubic-bezier(0.61, 0.3, 0.24, 0.51) infinite;
+  top: 55%;
+  left: 17%;
+}
+
+.js {
+  animation: bob3 15s cubic-bezier(0.61, 0.3, 0.24, 0.51) infinite;
+  top: 65%;
+  left: 70%;
+}
+
+#angular:checked ~ .ang-projects {
+  opacity: 1;
+  z-index: 1000000
+}
+
+#react:checked ~ .react-projects {
+  opacity: 1;
+  z-index: 100000
+}
+
+#js:checked ~ .js-projects {
+  opacity: 1;
+  z-index: 1000000;
+}
+
+.projects-info {
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  height: 100%;
+  opacity: 0;
+  overflow: scroll;
+  position: absolute;
+  text-align: center;
+  transition: opacity .5s ease-in, z-index 0.5s linear;
+  width: 100%;
+  z-index: -100000;
+
+  h1 {
+    font: 2em 'distant_galaxyregular';
+    margin: 1em 0 0.5em;
+    color: black;
+    text-shadow: 1px 1px #68f130, -1px 1px #d0f130, -1px -1px #d0f130, 1px -1px #45f130;;
+  }
+}
+
+.projects-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font: 1.1em 'Share Tech Mono', monospace;
+  justify-content: space-around;
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+
+  .project {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 1em 0;
+    max-width: 400px;
+    padding: 1em;
+    position: relative;
+  }
+
+  img {
+    width: 80%;
+  }
+
+  .project-links {
+    font-size: 1.05em;
+    margin: 1em 0;
+
+    a {
+      color: yellow;
+    }
+  }
+}
+
+.hide-button {
+  color: red;
+  cursor: pointer;
+  font: 1em 'Share Tech Mono', monospace;
+  padding: 1em;
+
+  &:hover {
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+  }
+}
+
+.project:before, 
+.project:after, 
+.project>:last-child:before, 
+.project>:last-child:after {
+    position:absolute;
+    width:20px;
+    height: 20px;
+    border-color: white; 
+    border-style:solid;
+    content: ' ';
+    opacity: 0;
+    transition: 0.5s;
+    margin: -1.5em;
+}
+.project:before {
+  top: 0;
+  left: 0;
+  border-width: 1px 0 0 1px
+}
+.project:after {
+  top: 0;
+  right: 0;
+  border-width: 1px 1px 0 0
+}
+.project > :last-child:before {
+  bottom: 0;
+  right: 0;
+  border-width: 0 1px 1px 0
+}
+.project > :last-child:after {
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 1px 1px
+}
+
+.project:hover:before, 
+.project:hover:after, 
+.project:hover >:last-child:before, 
+.project:hover >:last-child:after {
+    width:60px; 
+    height: 60px;
+    opacity: 1;
+    margin: 0;
+}

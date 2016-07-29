@@ -1,0 +1,46 @@
+.logo {
+  position:absolute;
+  opacity: 0;
+  font-family: 'distant_galaxyregular';
+  z-index: 100;
+  color: white;
+  text-align: center;
+  left: 5%;
+  right: 5%;
+  top: .8em;
+  animation: logo 2s linear 1s forwards;
+  h1 {
+    color: black;
+    text-shadow: 1px 1px #d0f130, -1px 1px #d0f130, -1px -1px #d0f130, 1px -1px #d0f130;
+    font-size:1.6em;
+  }
+  h3 {
+    color: antiquewhite;
+    font-size: 1.4em;
+  }
+  @media screen and (min-width: 768px) {
+    h1 {
+      font-size: 3.5em;
+    }
+    h3 {
+      font-size: 2.5em;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    top: 2em;
+    h1 {
+      font-size: 4.2em;
+    }
+    h3 {
+      font-size: 3.1em;
+    }
+  }
+  @media screen and (min-width: 1441px) {
+    h1 {
+      font-size: 7em
+    }
+    h3 {
+      font-size: 4.5em;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "sw-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OoogleBoogle/sw-portfolio.git"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-live-server": "0.0.30",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OoogleBoogle/sw-portfolio/issues"
+  },
+  "homepage": "https://github.com/OoogleBoogle/sw-portfolio#readme"
+}

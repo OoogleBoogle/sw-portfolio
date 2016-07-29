@@ -1,0 +1,73 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "reset";
+@import "fonts";
+
+body {
+  background-color: transparent;
+}
+
+.viewport-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+
+.background {
+  position:fixed;
+  width: 106%;
+  height: 106%;
+  background: transparent url('../img/space.jpg');
+  z-index: -99999;
+  transition: transform 1.5s;
+}
+
+.midground {
+  position: fixed;
+  width: 110%;
+  height: 110%;
+  background: transparent url('../img/midground.svg');
+  transition: transform 1.5s;
+  z-index: -9999;
+}
+
+
+@import "logo";
+@import "navbar";
+@import "screen-positions";
+@import "animations";
+@import "introduction";
+@import "projects";
+@import "contact";
+@import "planet";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
