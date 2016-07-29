@@ -1,26 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Share+Tech+Mono' rel='stylesheet' type='text/css'>
   <link href="css/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
-
+  <meta property="og:title" content="Simon Attfield | Star Wars style portfolio" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://ooogleboogle.github.io/sw-portfolio/" />
+  <meta property="og:description" content="A different take on a normal portfolio with perhaps a little too much personality" />
   <title>SIMON ATTFIELD</title>
 </head>
 <body>
+  <!--name/title-->
   <div class="viewport-container">
     <div class="logo">
       <h1>Simon Attfield</h1>
       <h3>Web Developer</h3>
     </div>
 
+    <!--nav elements-->
     <input type="radio" name="navigation" id="home-nav" checked>
     <label for="home-nav" class="nav-label nav-label-1">:Introduction</label>
     <input type="radio" name="navigation" id="projects-nav">
     <label for="projects-nav" class="nav-label nav-label-2">:Projects</label>
     <input type="radio" name="navigation" id="contact-nav">
     <label for="contact-nav" class="nav-label nav-label-3">:Contact</label>
+    
+    <!--scrolling text-->
     <section class="scrolling-container">
       <div class="scrolling-text">
         <p>PROLOGUE: THE QUEST FOR GAINFUL EMPLOYMENT</p>
@@ -32,6 +39,7 @@
         <p>A JOB INTERVIEW!</p>
     </section>
 
+    <!--projects panel-->
     <section class="projects">    
       <input name="projects" type="radio" id="angular">
       <label for="angular" class="project-icon angular">
@@ -42,7 +50,7 @@
         <input type="radio" name="projects" id="hide-ang">
         <label for="hide-ang" class="hide-button">Close</label>
         <div class="projects-container">
-
+          <!--chatster project-->
           <div class="project">
             <img src="img/chat-sm.jpg" alt="Chatster Logo Image">
             <p>
@@ -54,7 +62,7 @@
               <a href="https://angfire2-chat.firebaseapp.com/login">Demo</a>
             </div>
           </div>
-
+          <!--benny project-->
           <div class="project">
             <img src="img/benny-hill.png" alt="Benny Hill Video Converter Image">
             <p>
@@ -70,6 +78,7 @@
         </div>
       </div>
 
+      <!--react projects-->
       <input name="projects" type="radio" id="react">
       <label for="react" class="project-icon react">
         <img src="img/react.png" alt="react logo">
@@ -80,6 +89,7 @@
         <label for="hide-react" class="hide-button">Close</label>
         <div class="projects-container">
 
+          <!--twitter cms-->
           <div class="project">
             <img src="img/twitter-cms-icon.jpg" alt="Twitter CMS Logo Image">
             <p>
@@ -95,6 +105,7 @@
         </div>
       </div>
 
+      <!--js projects-->
       <input name="projects" type="radio" id="js">
       <label for="js" class="project-icon js">
         <img src="img/js-logo.png" alt="js logo">
@@ -104,7 +115,8 @@
         <input type="radio" name="projects" id="hide-js">
         <label for="hide-js" class="hide-button">Close</label>
         <div class="projects-container">
-          
+
+          <!--gerald-->
           <div class="project">
             <img src="img/game-icon.jpg" alt="Canvas Game Logo Image">
             <p>Escape it all! Become a fireball wielding Raccoon&#x2122; and take out those tasty farmers!</p>
@@ -114,6 +126,7 @@
             </div>
           </div>
 
+          <!--tic-tac-toe-->
           <div class="project">
             <img src="img/tic-tac-toe.png" alt="Tic Tac Toe Game Logo Image">
             <p>It may look like the love child of an Elephant and the Back End of a Bus. BUT! 
