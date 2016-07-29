@@ -35,7 +35,9 @@ input[type="radio"] {
   top: 11.1em;
 }
 
-input[type="radio"]:checked + label {
+#home-nav:checked + label,
+#projects-nav:checked + label,
+#contact-nav:checked + label {
   background-color: rgba(124, 177, 21, 0.81);
   padding-left: 2em;
   @media screen and (min-width: 768px) {

@@ -5,3 +5,28 @@
   background-color: transparent;
   transition: 1.5s;
 }
+
+.project-icon {
+  position: absolute;
+  max-width: 120px;
+  width: 20%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.angular {
+  top: 35%;
+  left: 45%;
+}
+
+.react {
+  top: 55%;
+  left: 17%;
+}
+
+.js {
+  top: 65%;
+  left: 70%;
+}
