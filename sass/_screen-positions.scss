@@ -1,4 +1,4 @@
-#screen-1:checked {
+#home-nav:checked {
   ~ .scrolling-container {
     left: 10%;
     bottom: 0;
@@ -7,12 +7,12 @@
     }    
   }
 
-  ~ .panel-2 {
+  ~ .projects {
     left: 101vw;
     top: 0;
   }
 
-  ~ .panel-3 {
+  ~ .contact {
     left: 100vw;
     top: 100%;
   }
@@ -25,7 +25,7 @@
     transform: translate(0, 0);
   }
 
-  ~ .panel-4 {
+  ~ .planet {
     top: 65vh;
     left: -60vw;
     @media screen and (min-width: 572px) {
@@ -41,18 +41,18 @@
 }
 
 
-#screen-2:checked {
+#projects-nav:checked {
   ~ .scrolling-container {
     left: -100%;
     bottom: 0;
   }
 
-  ~ .panel-2 {
+  ~ .projects {
     left: 0;
     top: 0;
   }
 
-  ~ .panel-3 {
+  ~ .contact {
     top: 100%;
     left: 0;
   }
@@ -64,7 +64,7 @@
   ~ .background {
     transform: translate(-3%, 0);
   }
-  ~ .panel-4 {
+  ~ .planet {
     top: 80vh;
     left: -160vw;
     @media screen and (min-width: 572px) {
@@ -80,18 +80,18 @@
   }
 }
 
-#screen-3:checked {
+#contact-nav:checked {
   ~ .scrolling-container {
     left: -100%;
     bottom: 100%;
   }
 
-  ~ .panel-2 {
+  ~ .projects {
     left: 0;
     top: -100%;
   }
 
-  ~ .panel-3 {
+  ~ .contact {
     left: 0;
     top: 0;
   }
@@ -104,7 +104,7 @@
     transform: translate(-3%, -5%);
   }
   
-  ~ .panel-4 {
+  ~ .planet {
     left: -160vw;
     top: 10vh;
     @media screen and (min-width: 572px) {

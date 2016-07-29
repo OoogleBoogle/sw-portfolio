@@ -3,6 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+@import "reset";
 @import "fonts";
 
 body {
@@ -22,7 +23,7 @@ body {
   position:fixed;
   width: 106%;
   height: 106%;
-  background: transparent url('../images/space.jpg');
+  background: transparent url('../img/space.jpg');
   z-index: -99999;
   transition: transform 1.5s;
 }
@@ -31,7 +32,7 @@ body {
   position: fixed;
   width: 110%;
   height: 110%;
-  background: transparent url('../images/midground.svg');
+  background: transparent url('../img/midground.svg');
   transition: transform 1.5s;
   z-index: -9999;
 }

@@ -39,23 +39,7 @@ gulp.task('html:prod', function() {
     .pipe(gulp.dest('build/'));
 });
 
-// // JavaScript build task, removes whitespace and concatenates all files
-// gulp.task('scripts', function() {
-//   return browserify('src/js/main.js')
-//     .bundle()
-//     .pipe(source('app.js'))
-//     .pipe(buffer())
-//     .pipe(gulp.dest('build/js'));
-// });
 
-// gulp.task('scripts:prod', function() {
-//   return browserify('src/js/main.js')
-//     .bundle()
-//     .pipe(source('app.js'))
-//     .pipe(buffer())
-//     .pipe(uglify())
-//     .pipe(gulp.dest('build/js'));
-// });
 
 // Image optimization task
 gulp.task('images', function() {
@@ -64,6 +48,10 @@ gulp.task('images', function() {
     .pipe(gulp.dest('build/img'));
 });
 
+gulp.task('fonts', function() {
+  return gulp.src('fonts/**/*')
+    .pipe(gulp.dest('build/fonts'));
+})
 
 // gulp.task('favicons', function() {
 //   return gulp.src('src/favicons/*')
@@ -91,10 +79,10 @@ gulp.task('serve', function() {
 
 
 // Default task
-gulp.task('dev', ['html', 'sass', 'images', 'watch','serve']);
+gulp.task('dev', ['html', 'sass', 'images', 'fonts', 'watch','serve']);
 
 // Build task
-gulp.task('build', ['sass:prod', 'html:prod', 'images']);
+gulp.task('build', ['sass:prod', 'html:prod', 'fonts', 'images']);
 
 // git build push command
 // git push origin `git subtree split --prefix build gh-pages`:gh-pages --force

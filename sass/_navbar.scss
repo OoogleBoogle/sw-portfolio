@@ -23,7 +23,7 @@ input[type="radio"] {
   }
   @media screen and (min-width: 1441px) {
     font-size: 2em;
-    @include border-radius(0 40px 40px 0);
+    border-radius: 0 40px 40px 0;
   }
 }
 
