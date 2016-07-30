@@ -10,4 +10,59 @@
   font-size: 3em;
   padding-top: 2em;
   transition: 1.5s;
+
+  img {
+    transform: scale(0) translateX(-200vw);
+  }
+}
+
+#contact-nav:checked ~ .contact img {
+  transform: scale(3) translateX(200vw);
+  transition: transform 2.5s linear 0.7s;
+}
+
+#contact-nav:checked ~ .contact > .contact-text-container {
+  transition: width 0.08s linear 2s, z-index 0.8s linear 2.1s;
+  width: 100%;
+  z-index: 10000;
+}
+
+.contact-text-container {
+  box-sizing: border-box;
+  font: 0.6em 'Share Tech Mono', monospace;
+  left: 50%;
+  overflow: hidden;
+  padding: 0.3em;
+  position: absolute;
+  text-align: center;
+  top: 52%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  z-index: -10;
+
+  a {
+    color: yellow;
+    display: block;
+    min-width: 300px;
+    padding: .4em 0;
+    text-decoration: none;
+    text-shadow: 1px 1px 5px black;
+  }
+
+  a i {
+    padding: 0 0.3em;
+  }
+}
+
+.fa-first-order,
+.fa-code {
+  color: #c41f25;
+}
+
+.fa-rebel {
+  color: #a11a05;
+}
+
+.fa-empire {
+  color: #800000;
 }
