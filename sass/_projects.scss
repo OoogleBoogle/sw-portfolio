@@ -15,7 +15,7 @@
 
   img {
     transform: scale(1);
-    transition: transform 1s;
+    transition: transform 1.2s;
     width: 100%;
   }
 }
@@ -24,7 +24,7 @@
 #angular:checked + .project-icon img,
 #react:checked + .project-icon img,
 #js:checked + .project-icon img {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .angular {
@@ -133,7 +133,7 @@
     position:absolute;
     width:20px;
     height: 20px;
-    border-color: white; 
+    border-color: #279600; 
     border-style:solid;
     content: ' ';
     opacity: 0;
@@ -143,22 +143,22 @@
 .project:before {
   top: 0;
   left: 0;
-  border-width: 1px 0 0 1px
+  border-width: 2px 0 0 2px
 }
 .project:after {
   top: 0;
   right: 0;
-  border-width: 1px 1px 0 0
+  border-width: 2px 2px 0 0
 }
 .project > :last-child:before {
   bottom: 0;
   right: 0;
-  border-width: 0 1px 1px 0
+  border-width: 0 2px 2px 0
 }
 .project > :last-child:after {
   bottom: 0;
   left: 0;
-  border-width: 0 0 1px 1px
+  border-width: 0 0 2px 2px
 }
 
 .project:hover:before, 

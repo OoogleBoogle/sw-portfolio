@@ -22,9 +22,13 @@
 }
 
 #contact-nav:checked ~ .contact > .contact-text-container {
-  transition: width 0.08s linear 2s, z-index 0.8s linear 2.1s;
+  transition: width 144.419ms linear 2127.66ms, z-index 62.8743ms linear 2337.6ms; 
   width: 100%;
-  z-index: 10000;
+  z-index: 10;
+
+  @media screen and (min-width: 700px) {
+    transition: width 144.419ms linear 2005.01ms, z-index 62.8743ms linear 2162.38ms;
+  }
 }
 
 .contact-text-container {
@@ -47,6 +51,11 @@
     padding: .4em 0;
     text-decoration: none;
     text-shadow: 1px 1px 5px black;
+
+    @media screen and (min-width: 1986px) {
+      min-width: 400px;
+      font-size: 1.6em;
+    }
   }
 
   a i {
